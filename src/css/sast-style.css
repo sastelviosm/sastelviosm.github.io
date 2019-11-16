@@ -1,0 +1,112 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-Jul-2019, 21:22:49
+    Author     : sstlv_g7pztdn
+*/
+
+
+.letra_extra_grande{
+    font-size: 3.5rem !important;
+    font-weight: 900 !important;    
+}
+
+
+/* cursor */
+span.banner_text_w3ls {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+
+/* The typewriter cursor effect */
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.texto-justificado {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 10px;
+}
+
+.link-externo{
+    text-align: right !important;
+    color: white !important;
+    background: none !important;
+    cursor: pointer !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 0.9rem !important;
+    margin-right: 5px !important;
+}            
+
+
+.periodo-experiencia{
+    text-align: right !important;
+    min-width: 10% !important;
+} 
+
+.periodo-experiencia-conteudo{
+    font-size: 1.2rem !important;
+    font-weight: 900 !important;
+    color: white !important;
+    text-align: right !important;
+}           
+
+
+.texto-negrito{
+    font-weight: bold;
+}
+
+
+#imagem-about{
+    width:100%; /* you can use % */
+    height: auto;
+}
+
+
+#titulo-formacao{
+    width:100%;
+}
+/*#section-more-about {
+    background: url(../img/gallery/sast_portrait_size2.jpg);
+    background-repeat: no-repeat;  Do not repeat the image 
+    background-size: initial;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: right; 
+    -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}*/
+
+/*@media (min-width: 1366px) and (max-width: 2000px) {
+
+    #section-about {
+        background: url(../img/gallery/sast_portrait_size2.jpeg);
+        background-repeat: no-repeat;  Do not repeat the image 
+        background-size: initial;
+        background-attachment: fixed;
+        background-size: 50% 100%;
+        background-position: right; 
+    }
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+
+    #section-about {
+        background: url(../img/gallery/sast_portrait_size1.jpg);
+        background-repeat: no-repeat;  Do not repeat the image 
+        background-size: initial;
+        background-attachment: fixed;
+        background-size: 50% 100%;
+        background-position: right; 
+    }
+}
+*/
