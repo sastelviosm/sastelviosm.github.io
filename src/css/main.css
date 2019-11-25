@@ -2715,7 +2715,14 @@ textarea {
 #fp-nav.right {
     right: 58px;
     margin-right: 0px;
-    position: absolute; }
+    position: absolute;
+    /*position: fixed;*/
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0); 
+}
 
 #fp-nav span, .fp-slidesNav span {
     border-color: #fff;
