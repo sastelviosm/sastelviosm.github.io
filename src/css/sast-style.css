@@ -14,6 +14,11 @@ and open the template in the editor.
     font-weight: 900 !important;    
 }
 
+.letra_extra_pequena{
+    font-size: 0.6rem !important;
+    font-weight: 300 !important;    
+}
+
 
 /* cursor */
 span.banner_text_w3ls {
@@ -30,6 +35,12 @@ span.banner_text_w3ls {
 
 .texto-justificado {
     text-align: justify;
+    text-justify: inter-word;
+    margin: 10px;
+}
+
+.texto-centralizado{
+    text-align: center;
     text-justify: inter-word;
     margin: 10px;
 }
