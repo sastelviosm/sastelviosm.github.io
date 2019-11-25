@@ -4,7 +4,11 @@
  * MIT licensed
  *
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
- */.fp-enabled body,
+ */
+
+@media screen and (min-width: 800px) {
+
+ .fp-enabled body,
 html.fp-enabled {
     margin:0;
     padding:0;
@@ -218,3 +222,6 @@ html.fp-enabled {
     height:auto!important
 }
 /*# sourceMappingURL=jquery.fullpage.min.css.map */
+
+
+}
