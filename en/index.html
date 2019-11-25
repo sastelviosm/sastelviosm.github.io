@@ -49,7 +49,7 @@
         <!-- Uncomment below to load individualy vendor CSS -->
         <link rel="stylesheet" href="../src/css/bootstrap.min.css">
         <link rel="stylesheet" href="../src/css/swiper.min.css">
-        <!-- <link rel="stylesheet" href="../src/css/jquery.fullpage.min.css"> -->
+        <link rel="stylesheet" href="../src/css/jquery.fullpage.min.css">
         <link rel="stylesheet" href="../src/css/vegas.min.css">
 
         <!-- Main CSS files -->
@@ -59,7 +59,6 @@
         <link rel="stylesheet" href="../src/css/sast-style.css">
 
         <!-- add alt layout here 
-
         <link rel="stylesheet" crossorigin="anonymous" href="http://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css">
         -->
         <script src="../src/js/modernizr-2.7.1.min.js"></script>
@@ -171,7 +170,6 @@
         <div class="page-cover" wfd-id="280">
             <!-- Cover Background -->
             <!-- <div class="cover-bg bg-img" data-image-src="src/img/bg-default1.jpg" style="background-image: url(&quot;src/img/bg-default1.jpg&quot;); background-repeat: no-repeat; background-position: center center; background-size: cover;" wfd-id="282">
-
             </div> -->
 
             <!-- Transluscent mask as filter -->
@@ -251,10 +249,8 @@
                             <!-- content
                             <div class="section-content" wfd-id="214">
                                 <!-- other part of the dual column 
-
                             </div>
                         </div>
-
                         <!-- end of column content -->
                     </div>
                     <!-- end of item -->
@@ -361,6 +357,7 @@
                                             A graduate in Information Technologies at UCM is a professional capable of managing technologies in three main areas: programming, system and network administration, and databases. Graduates of this program are professionals able to promote the use of information technologies, prepared to respond and adapt to the technological needs of today and tomorrow.                                            
                                         </p>
                                          <p class="periodo-experiencia" id="merito">
+                                            Graduated as IT Best Student 2012-2015.
                                         </p>
                                     </div>
                                 </div>
@@ -405,7 +402,7 @@
                                             </a>
                                         </p>
                                         <p ><span>Type of company or activity sector:</span>
-                                         <span id="tipo-empresa"></span>
+                                         <span id="tipo-empresa">Education</span>
                                     </p>
                                         <p class="texto-justificado"> 
                                             <ul>
@@ -463,7 +460,9 @@
                                         </p>
                                         <p>
                                             <span>Type of company or activity sector:</span>
-                                            <span id="tipo-empresa2"></span>
+                                            <span id="tipo-empresa2">
+                                                Sales; Technology.
+                                            </span>
                                         </p>
                                         <p class="texto-justificado"> 
                                             <ul>
@@ -523,7 +522,9 @@
                                             </a>
                                         </p>
                                         <p>
-                                            <span>Type of company or activity sector:</span> <span id="tipo-empresa3"></span>
+                                            <span>Type of company or activity sector:</span> <span id="tipo-empresa3">
+                                                Water collection, treatment and distribution.
+                                            </span>
                                         </p>
                                         <p class="texto-justificado"> 
                                             <ul>
@@ -583,6 +584,12 @@
                                                 <a class="btn btn-outline-white btn-round" href="mailto:sastelvios@gmail.com?subject=CONTACT FROM WEBSITE: ">
                                                     <span class="txt" wfd-id="45">Contact</span>
                                                 </a>
+                                            </div>
+                                            <p>
+                                            <div class="texto-centralizado" wfd-id="44">
+                                                <span class="letra_extra_pequena">Data Ver.: 2019.11.25</span>
+                                                <p>
+                                                <span class="letra_extra_pequena">Website Ver.: 1.0</span>
                                             </div>
                                     </div>
                                 </div>
@@ -650,6 +657,8 @@
         <script src="../src/js/all.js"></script>
         <script src="../src/js/particles.js"></script>
         <script src="../src/js/jquery.spincrement.js"></script>
+        <!-- <script src="../src/js/fullpage.js"></script> -->
+        <!-- <script src="../src/js/jquery.slimscroll.min.js"></script> -->
 
         <!-- Countdown script -->
         <script src="../src/js/jquery.downCount.js"></script>
@@ -671,29 +680,33 @@
              if(localStorage){
                  localStorage.setItem('userLang', "en-EN");
              }
+
+             //inicializacao de fullpage e derivados
+             $(document).ready(function () {
+                $.fn.fullpage({
+                    slidesColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
+                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                    scrollOverflow: true
+                });
+            });
             
             //alert(localStorage.getItem('userLang'));
         //FIM VARIAVEIS GERAIS
-
         //text effect
         document.addEventListener('DOMContentLoaded', function (event) {
             translateDynamicContent();
         });
-
         //TypeWriter animation
         function typeWriting(element, array, timeText, timeWait, delay) {
             setTimeout(function () {
-
                 // type one text in the typwriter
                 // keeps calling itself until the text is finished
                 function typeWriter(text, i, fnCallback) {
-
                 
                     // chekc if text isn't finished yet
                     if (i < (text.length)) {
                        // add next character to h1
                        document.getElementById(element).innerHTML = text.substring(0, i + 1);
-
                         // wait for a while and call this function again for next character
                         setTimeout(function () {
                             typeWriter(text, i + 1, fnCallback)
@@ -704,7 +717,6 @@
                         // call callback after timeout
                         setTimeout(fnCallback, timeWait);
                    }
-
                 }
                 // start a typewriter animation for a text in the dataText array
                 function StartTextAnimation(i) {                    
@@ -721,8 +733,6 @@
                 StartTextAnimation(0);
              }, delay);
         };
-
-
         //carregar idade
         //Mes/Dia/Ano
         window.onload = function idade(){
@@ -736,12 +746,10 @@
             document.getElementById("idade").innerHTML = age;
             return age;
         }        
-
         //Verifica mudancas na parte visivel do site e faz uma accao
         //a accao eh incremetar a idade num efeito spinincrement
         var container = document.querySelector( '.section' );
         document.addEventListener( 'DOMContentLoaded', () => {
-
             if(localStorage.getItem('userLang') == 'pt-PT' || localStorage.getItem('userLang') == 'pt-BR'){
                 //mensagem de apresentacao
                 const dataIntroduction = ["Ola!","Eu sou Sastélvio."];
@@ -758,17 +766,12 @@
                 //mensagem de boas vindas
                 const dataWellcome = ["This is my website, welcome."];
                 typeWriting("wellcome-message", dataWellcome, 40, 1000, 3000);
-
             }
-
             changeTracker();
         });
-
         function changeTracker(){
             MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
-
     var observer = new MutationObserver(function(mutations, observer) {
-
        // alert('Current class:' + mutations[0].target.className);
             //verifica se a url tem a palavra about e executa a funcao
             var url = location.href;
@@ -783,7 +786,6 @@
                     typeWriting("sobre_titulo", dataCompanyType, 100, 1000, 100);              
                 
                 }
-
                 if(url.indexOf("education")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
@@ -791,7 +793,6 @@
                     const dataEducation = ["Educação"];
                     typeWriting("educacao_titulo", dataEducation, 100, 1000, 100);    
                 }
-
                 if(url.indexOf("education")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
@@ -799,7 +800,6 @@
                     const dataEducationMerit = ["Graduado com diploma de mérito de melhor estudante em TI."];
                     typeWriting("merito", dataEducationMerit, 80, 1000, 500);       
                 }
-
                 if(url.indexOf("experience")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
@@ -807,7 +807,6 @@
                     const dataExperience = ["Experiência"];
                     typeWriting("experiencia_titulo", dataExperience, 100, 1000, 100);
                 }
-
                 if(url.indexOf("experience")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
@@ -815,7 +814,6 @@
                     const dataCompanyType = ["Educação."];
                     typeWriting("tipo-empresa", dataCompanyType, 80, 1000, 500); 
                 }
-
                 if(url.indexOf("experience2")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
@@ -823,11 +821,9 @@
                     const dataCompanyType2 = ["Comércio a Grosso e a Retalho; Tecnologia."];
                     typeWriting("tipo-empresa2", dataCompanyType2, 80, 1000, 500); 
                 }
-
                 if(url.indexOf("about2")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
-
                     setTimeout(function () {
                         $('#idade').spincrement({
                             from: 0,
@@ -839,7 +835,6 @@
                     const dataCountry = ["Moçambique"];            
                     typeWriting("pais_origem", dataCountry, 110, 1000, 50);   
                 }
-
                 if(url.indexOf("contact")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
@@ -847,7 +842,6 @@
                     const dataExperience = ["Contacto"];
                     typeWriting("contacto_titulo", dataExperience, 100, 1000, 100); 
                 }
-
                 if(url.indexOf("experience3")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
@@ -855,7 +849,6 @@
                     const dataCompanyType3 = ["Captação, tratamento e distribuição de água."];
                     typeWriting("tipo-empresa3", dataCompanyType3, 80, 1000, 500);          
                 }
-
             }else{
                 //PARTE INGLES
                 if(url.indexOf("about")==-1) {
@@ -866,7 +859,6 @@
                     typeWriting("sobre_titulo", dataCompanyType, 100, 1000, 100);              
                 
                 }
-
                 if(url.indexOf("experience")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
@@ -874,7 +866,6 @@
                     const dataExperience = ["Experience"];
                     typeWriting("experiencia_titulo", dataExperience, 100, 1000, 100);
                 }
-
                 if(url.indexOf("experience")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
@@ -882,7 +873,6 @@
                     const dataCompanyType = ["Education."];
                     typeWriting("tipo-empresa", dataCompanyType, 80, 1000, 500); 
                 }
-
                 if(url.indexOf("education")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
@@ -890,7 +880,6 @@
                     const dataEducation = ["Education"];
                     typeWriting("educacao_titulo", dataEducation, 100, 1000, 100);    
                 }
-
                 if(url.indexOf("education")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
@@ -898,19 +887,16 @@
                     const dataEducationMerit = ["Graduated as IT Best Student 2012-2015."];
                     typeWriting("merito", dataEducationMerit, 80, 1000, 500);       
                 }
-
                 if(url.indexOf("experience2")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
                     //tipo de empresa da seccao experiencia com efeito typewriter
-                    const dataCompanyType2 = ["Wholesale and retail sales; Technology."];
+                    const dataCompanyType2 = ["Sales; Technology."];
                     typeWriting("tipo-empresa2", dataCompanyType2, 80, 1000, 500); 
                 }
-
                 if(url.indexOf("about2")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
-
                     setTimeout(function () {
                         $('#idade').spincrement({
                             from: 0,
@@ -922,7 +908,6 @@
                     const dataCountry = ["Mozambique"];            
                     typeWriting("pais_origem", dataCountry, 110, 1000, 50);   
                 }
-
                 if(url.indexOf("contact")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
@@ -930,7 +915,6 @@
                     const dataExperience = ["Contact"];
                     typeWriting("contacto_titulo", dataExperience, 100, 1000, 100); 
                 }
-
                 if(url.indexOf("experience3")==-1) {
                     //alert("não existe essa palavra na url");
                 } else {
@@ -940,7 +924,6 @@
                 }
             }
         });
-
             // define what element should be observed by the observer
             // and what types of mutations trigger the callback
             observer.observe(container, {
@@ -949,7 +932,6 @@
             });
         }
     
-
         //Internationalization
         //Documentation:
         //https://github.com/ruyadorno/dom-i18n/blob/master/examples/basic-support.html
