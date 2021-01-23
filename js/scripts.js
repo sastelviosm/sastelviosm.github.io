@@ -42,11 +42,9 @@ $(function () {
         });
     });
 
-
     /*
-     Sidebar Show/Hide
+     Inicoio
      */
-
     $('header, .profile').on('click', '.menu-btn', function () {
 
         /* vars */
@@ -93,6 +91,7 @@ $(function () {
         }
         return false;
     });
+
     $('.content-sidebar, .container').on('click', '.close, .s_overlay', function () {
         $('.s_overlay').fadeOut();
         $('.content-sidebar').removeClass('active');
@@ -454,7 +453,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //mensagem de boas vindas
     const dataWellcome = ["This is my website, welcome."];
     typeWriting("wellcome_message", dataWellcome, 30, 0, 5500);
-     const dataSaudacao= ["Ola!"];
+    const dataSaudacao = ["Ola!"];
     typeWriting("saudacao", dataSaudacao, 60, 0, 3000);
     //mensagem de apresentacao
     const dataIdentificacao = ["Eu sou Sastélvio."];
