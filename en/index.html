@@ -51,6 +51,7 @@
         <link rel="stylesheet" href="../css/animate.css" />
         <link rel="stylesheet" href="../css/owl.carousel.css" />
         <link rel="stylesheet" href="../css/sas_style.css" />
+        <link rel="stylesheet" href="../css/modal.css" />
 
         <!--Background Gradient-->
         <link rel="stylesheet" href="../css/gradient.css" />
@@ -216,8 +217,15 @@
                         <div class="col col-d-12 col-t-12 col-m-12">
                             <div class="info-list">
                                 <ul>
-                                    <li><strong class="versao">Ver. de Dados . . . . . <span id="data_version"></span></strong></li>
-                                    <li><strong class="versao">Ver. do Website . . . . . <span id="app_version"></span></strong></li>
+                                    <li> 
+                                        <strong class="versao">Ver. de Dados . . . . . <span id="data_version"></span></strong>
+                                        <div class="social">
+                                            <a href="#" id="versionInfo" class="btn_version"><span class="fa fa-info-circle"></span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong class="versao" >Ver. do App . . . . . <span id="app_version"></span></strong>
+                                    </li>
                                 </ul>
                             </div>
                         </div>                                              
@@ -257,7 +265,7 @@
                                                     <img src="../img/sas_logo.png" alt="Sastelvio Serafim Manuel" />
                                                 </div>
                                                 <div class="clear"></div>                                                
-                                            </div>
+                                            </div>                                           
                                             <div>&nbsp;</div> 
                                             <div>&nbsp;</div> 
                                             <div >
@@ -995,7 +1003,16 @@ Cheers.
 
                     </div>
                 </div>
+            </div>
+        </div>
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
             </div>
 
         </div>
@@ -1012,6 +1029,7 @@ Cheers.
         <script src="../js/owl.carousel.js"></script>
         <script src="../js/typed.js"></script>
         <script src="../js/fontawesome.js"></script>
+        <script src="../js/modal.js"></script>
         <!--
                 Main Scripts
         -->

@@ -31,12 +31,26 @@
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 /* FIM OCULTAR SETAS NO CAMPO NUMERO */
+
+.btn_version{
+    border: none;
+    height: 20px;
+    position: absolute;    
+    background: none;
+}
+.btn_version:focus{
+    background: none;
+}
+
+#icon_version{
+    font-size: 0.9rem;
+}
