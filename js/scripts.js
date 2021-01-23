@@ -449,7 +449,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dataSalut = ["Hello!"];
     typeWriting("salut", dataSalut, 60, 0, 3000);
     //mensagem de apresentacao
-    const dataIntroduction = ["I am Sastélvio."];
+    const dataIntroduction = ["I am Sastelvio."];
     typeWriting("identification", dataIntroduction, 50, 0, 3900);
     //mensagem de boas vindas
     const dataWellcome = ["This is my website, welcome."];
