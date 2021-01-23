@@ -446,14 +446,22 @@ $(function () {
 
 //EFEITO DE ESCRITA DE TEXTO NO INICIO
 document.addEventListener('DOMContentLoaded', () => {
-    const dataSalut = ["Ola!"];
+    const dataSalut = ["Hello!"];
     typeWriting("salut", dataSalut, 60, 0, 3000);
     //mensagem de apresentacao
-    const dataIntroduction = ["Eu sou Sastélvio."];
+    const dataIntroduction = ["I am Sastélvio."];
     typeWriting("identification", dataIntroduction, 50, 0, 3900);
     //mensagem de boas vindas
-    const dataWellcome = ["Este é o meu website, bem-vindo(a)."];
-    typeWriting("wellcome-message", dataWellcome, 30, 0, 5500);
+    const dataWellcome = ["This is my website, welcome."];
+    typeWriting("wellcome_message", dataWellcome, 30, 0, 5500);
+     const dataSaudacao= ["Ola!"];
+    typeWriting("saudacao", dataSaudacao, 60, 0, 3000);
+    //mensagem de apresentacao
+    const dataIdentificacao = ["Eu sou Sastélvio."];
+    typeWriting("identificacao", dataIdentificacao, 50, 0, 3900);
+    //mensagem de boas vindas
+    const dataBemVindo = ["Este é o meu website, bem-vindo(a)."];
+    typeWriting("mensagem_boasvindas", dataBemVindo, 30, 0, 5500);
 
 });
 //TypeWriter animation
