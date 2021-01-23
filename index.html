@@ -3,16 +3,16 @@
     <head>        
     </head>
     <body>
-    <script>
-        //INICIO VARIAVEIS GERAIS
-         //detect language of the user
+        <script>
+            //INICIO VARIAVEIS GERAIS
+            //detect language of the user
             //var userLang = navigator.language || navigator.userLanguage;
             localStorage.setItem('userLang', navigator.language || navigator.userLanguage);
-             if(localStorage.getItem('userLang') == 'pt-PT' || localStorage.getItem('userLang') == 'pt-BR'){
+            if (localStorage.getItem('userLang') == 'pt-PT' || localStorage.getItem('userLang') == 'pt-BR') {
                 window.location.replace("pt/index.html");
-             }else{
+            } else {
                 window.location.replace("en/index.html");
-             } 
-    </script>
+            }
+        </script>
     </body>
 </html>
