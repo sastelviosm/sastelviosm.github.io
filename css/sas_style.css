@@ -54,3 +54,20 @@ input[type=number] {
 #icon_version{
     font-size: 0.9rem;
 }
+
+.percentage span {
+    display: block;
+    width: 2px;
+    height: 15px;
+    line-height: 50px;
+    padding-left: -25px!important;
+    text-align: left;
+    color: #000;
+    background: #78cc6d;
+    font-weight: 500;
+    position: absolute;
+    top: -6px;
+    right: 0px;
+    font-size: 9px;
+    color: white;
+}
