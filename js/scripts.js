@@ -43,7 +43,7 @@ $(function () {
     });
 
     /*
-     Inicoio
+     Inicio
      */
     $('header, .profile').on('click', '.menu-btn', function () {
 
