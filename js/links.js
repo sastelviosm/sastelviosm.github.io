@@ -1,8 +1,8 @@
 $('#ir_blog_en').click(function () {
-    window.open('http://blog.sastelvio.com/en', '_blank');
+    window.open('http://blog.sastelvio.com/en/', '_blank');
 });
 $('#ir_blog_pt').click(function () {
-    window.open('http://blog.sastelvio.com/pt', '_blank');
+    window.open('http://blog.sastelvio.com/pt/', '_blank');
 });
 
 $('#cv_pt').click(function () {
