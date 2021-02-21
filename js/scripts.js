@@ -15,6 +15,12 @@ $(window).on("load", function () {
     });
 });
 
+$(document).ready(function () {
+    $('.has-popup-image').magnificPopup({
+        type: 'image'
+    });
+});
+
 $(function () {
     'use strict';
 
