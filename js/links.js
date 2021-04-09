@@ -21,7 +21,7 @@ $("#cv_en").on('click', function(e) {
 //CERTIFICATES AND LICENCES
 $("#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_en").on('click', function(e) {
     e.preventDefault();
-    url = '/files/certificate/online//Certificado_Desenvolvimento_Agil_de_Software_Aeqso6kwZAAxuRwvHScgPLBEk5rz_EN.pdf';
+    url = '/files/certificate/online//Certificate_Desenvolvimento_Agil_de_Software_Aeqso6kwZAAxuRwvHScgPLBEk5rz_EN.pdf';
     window.open(url , "_blank");
     trackOutboundLink(url);
 });
