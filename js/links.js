@@ -22,8 +22,9 @@ $("#cv_en").on('click', function (e) {
 /*
  POPUP DE PDF
  */
-//desenvolvimento agil de software
+
 $(document).ready(function () {
+    //desenvolvimento agil de software
     $("#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_en").on('click', function () {
         $("#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_en").attr("href", "/files/certificate/online/Dev_Agil_Software_Aeqso6kwZAAxuRwvHScgPLBEk5rz_EN.pdf")
     });
@@ -31,8 +32,7 @@ $(document).ready(function () {
     $('#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_en').magnificPopup({
         type: 'iframe'
     });
-});
-$(document).ready(function () {
+
     $("#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_pt").on('click', function () {
         $("#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_pt").attr("href", "/files/certificate/online/Dev_Agil_Software_Aeqso6kwZAAxuRwvHScgPLBEk5rz_PT.pdf")
     });
@@ -40,10 +40,9 @@ $(document).ready(function () {
     $('#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_pt').magnificPopup({
         type: 'iframe'
     });
-});
 
-//fundamentos de financas
-$(document).ready(function () {
+
+    //fundamentos de financas
     $("#certificate_ARZu0w2IvgTNmyQMmLRpAS9jGJLB_en").on('click', function () {
         $("#certificate_ARZu0w2IvgTNmyQMmLRpAS9jGJLB_en").attr("href", "/files/certificate/online/Fundam_Financas_ARZu0w2IvgTNmyQMmLRpAS9jGJLB_EN.pdf")
     });
@@ -51,13 +50,12 @@ $(document).ready(function () {
     $('#certificate_ARZu0w2IvgTNmyQMmLRpAS9jGJLB_en').magnificPopup({
         type: 'iframe'
     });
-});
-$(document).ready(function () {
+
     $("#certificate_ARZu0w2IvgTNmyQMmLRpAS9jGJLB_pt").on('click', function () {
         $("#certificate_ARZu0w2IvgTNmyQMmLRpAS9jGJLB_pt").attr("href", "/files/certificate/online/Fundam_Financas_ARZu0w2IvgTNmyQMmLRpAS9jGJLB_PT.pdf")
     });
 
-    $('#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_pt').magnificPopup({
+    $('#certificate_ARZu0w2IvgTNmyQMmLRpAS9jGJLB_pt').magnificPopup({
         type: 'iframe'
     });
 });
