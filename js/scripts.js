@@ -21,6 +21,15 @@ $(document).ready(function () {
     });
 });
 
+/*
+ POPUP DE PDF
+ */
+$(document).ready(function() {
+    $('.iframe-popup').magnificPopup({
+        type: 'iframe'
+    });
+});
+
 $(function () {
     'use strict';
 
