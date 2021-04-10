@@ -15,25 +15,16 @@ $(window).on("load", function () {
     });
 });
 
+/*
+ POPUP DE IMAGEM
+ */
 $(document).ready(function () {
     $('.has-popup-image').magnificPopup({
         type: 'image'
     });
 });
 
-/*
- POPUP DE PDF
- */
-$(document).ready(function() {
- $(".iframe-popup").on('click', function(e) {
-        $(".iframe-popup").attr("href", "/files/certificate/online/Certificate_Desenvolvimento_Agil_de_Software_Aeqso6kwZAAxuRwvHScgPLBEk5rz_EN.pdf")
-    });
- 
-    $('.iframe-popup').magnificPopup({
-        type: 'iframe'
-    });
-});
-
+//TEXTO A SER DIGITADO, HEADLINES
 $(function () {
     'use strict';
 

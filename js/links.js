@@ -4,33 +4,41 @@ $('#ir_blog').click(function () {
 });
 
 //CV
-$("#cv_pt").on('click', function(e) {
+$("#cv_pt").on('click', function (e) {
     e.preventDefault();
     url = '/files/cv//CV_SASTELVIO_SERAFIM_MANUEL_Versao27.01.2021_Europass_PT.pdf';
-    window.open(url , "_blank");
+    window.open(url, "_blank");
     trackOutboundLink(url);
 });
 
-$("#cv_en").on('click', function(e) {
+$("#cv_en").on('click', function (e) {
     e.preventDefault();
     url = '/files/cv//CV_SASTELVIO_SERAFIM_MANUEL_Versao27.01.2021_Europass_EN.pdf';
-    window.open(url , "_blank");
+    window.open(url, "_blank");
     trackOutboundLink(url);
 });
 
 //CERTIFICATES AND LICENCES
-$("#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_en").on('click', function(e) {
-    e.preventDefault();
-    url = '/files/certificate/online//Certificate_Desenvolvimento_Agil_de_Software_Aeqso6kwZAAxuRwvHScgPLBEk5rz_EN.pdf';
-    window.open(url , "_blank");
-    trackOutboundLink(url);
-});
+/*
+ POPUP DE PDF
+ */
+$(document).ready(function () {
+    $("#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_en").on('click', function () {
+        $("#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_en").attr("href", "/files/certificate/online/Dev_Agil_Software_Aeqso6kwZAAxuRwvHScgPLBEk5rz_EN.pdf")
+    });
 
-$("#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_pt").on('click', function(e) {
-    e.preventDefault();
-    url = '/files/certificate/online//Certificado_Desenvolvimento_Agil_de_Software_Aeqso6kwZAAxuRwvHScgPLBEk5rz_PT.pdf';
-    window.open(url , "_blank");
-    trackOutboundLink(url);
+    $('#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_en').magnificPopup({
+        type: 'iframe'
+    });
+});
+$(document).ready(function () {
+    $("#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_pt").on('click', function () {
+        $("#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_pt").attr("href", "/files/certificate/online/Dev_Agil_Software_Aeqso6kwZAAxuRwvHScgPLBEk5rz_PT.pdf")
+    });
+
+    $('#certificate_Aeqso6kwZAAxuRwvHScgPLBEk5rz_pt').magnificPopup({
+        type: 'iframe'
+    });
 });
 
 //SOCIAL
