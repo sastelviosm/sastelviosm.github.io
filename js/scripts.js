@@ -25,7 +25,10 @@ $(document).ready(function () {
  POPUP DE PDF
  */
 $(document).ready(function() {
- $(".iframe-popup").attr("href", "/files/certificate/online/Certificate_Desenvolvimento_Agil_de_Software_Aeqso6kwZAAxuRwvHScgPLBEk5rz_EN.pdf")
+ $(".iframe-popup").on('click', function(e) {
+        $(".iframe-popup").attr("href", "/files/certificate/online/Certificate_Desenvolvimento_Agil_de_Software_Aeqso6kwZAAxuRwvHScgPLBEk5rz_EN.pdf")
+    });
+ 
     $('.iframe-popup').magnificPopup({
         type: 'iframe'
     });
