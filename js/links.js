@@ -6,14 +6,14 @@ $('#ir_blog').click(function () {
 //CV
 $("#cv_pt").on('click', function (e) {
     e.preventDefault();
-    url = '/files/cv//CV_SASTELVIO_SERAFIM_MANUEL_Versao27.01.2021_Europass_PT.pdf';
+    url = '/files/cv//CV_SASTELVIO_SERAFIM_MANUEL_Versao20.04.2021_Europass_PT.pdf';
     window.open(url, "_blank");
     trackOutboundLink(url);
 });
 
 $("#cv_en").on('click', function (e) {
     e.preventDefault();
-    url = '/files/cv//CV_SASTELVIO_SERAFIM_MANUEL_Versao27.01.2021_Europass_EN.pdf';
+    url = '/files/cv//CV_SASTELVIO_SERAFIM_MANUEL_Versao20.04.2021_Europass_EN.pdf';
     window.open(url, "_blank");
     trackOutboundLink(url);
 });
@@ -95,7 +95,7 @@ $(document).ready(function () {
 
     //financas para gestores nao financeiros
     $("#certificate_AW82Cl-iWU27ZO1NA08AM3R7ql0C_en").on('click', function () {
-        $("#certificate_AW82Cl-iWU27ZO1NA08AM3R7ql0C_en").attr("href", "/files/certificate/online/Pensamento_Critico_AbN4nDfagTkiBlRL3Rc92rpkp68E_EN.pdf")
+        $("#certificate_AW82Cl-iWU27ZO1NA08AM3R7ql0C_en").attr("href", "/files/certificate/online/Financas_Gestores_nao_Fin_AW82Cl-iWU27ZO1NA08AM3R7ql0C_EN.pdf")
     });
 
     $('#certificate_AW82Cl-iWU27ZO1NA08AM3R7ql0C_en').magnificPopup({
@@ -103,7 +103,7 @@ $(document).ready(function () {
     });
 
     $("#certificate_AW82Cl-iWU27ZO1NA08AM3R7ql0C_pt").on('click', function () {
-        $("#certificate_AW82Cl-iWU27ZO1NA08AM3R7ql0C_pt").attr("href", "/files/certificate/online/Pensamento_Critico_AbN4nDfagTkiBlRL3Rc92rpkp68E_EN.pdf")
+        $("#certificate_AW82Cl-iWU27ZO1NA08AM3R7ql0C_pt").attr("href", "/files/certificate/online/Financas_Gestores_nao_Fin_AW82Cl-iWU27ZO1NA08AM3R7ql0C_PT.pdf")
     });
 
     $('#certificate_AW82Cl-iWU27ZO1NA08AM3R7ql0C_pt').magnificPopup({
