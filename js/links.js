@@ -177,7 +177,7 @@ $(document).ready(function () {
     $('#certificate_AcxIYnPhibTa9pduObq9TptCwfoV_pt').magnificPopup({
         type: 'iframe'
     });
-    
+
     //etica e lei na analise de dados
     $("#certificate_AZjzwifPR9pmYUOOankkSprQB89Q_en").on('click', function () {
         $("#certificate_AZjzwifPR9pmYUOOankkSprQB89Q_en").attr("href", "/files/certificate/online/Ethics_Law_Data_Analytics_AZjzwifPR9pmYUOOankkSprQB89Q_EN.pdf")
@@ -194,7 +194,7 @@ $(document).ready(function () {
     $('#certificate_AZjzwifPR9pmYUOOankkSprQB89Q_pt').magnificPopup({
         type: 'iframe'
     });
-    
+
     //aprendendo R
     $("#certificate_Abhcbg63rRLeLcwWyMS0qJXLzxyA_en").on('click', function () {
         $("#certificate_Abhcbg63rRLeLcwWyMS0qJXLzxyA_en").attr("href", "/files/certificate/online/Learning_R_Abhcbg63rRLeLcwWyMS0qJXLzxyA_EN.pdf")
@@ -212,6 +212,29 @@ $(document).ready(function () {
         type: 'iframe'
     });
 
+    $("#certificate_UNHCR_PSEA").on('click', function () {
+        $("#certificate_UNHCR_PSEA").attr("href", "/files/certificate/online/UNHCR_PSEA_Sastelvio_Manuel.pdf")
+    });
+
+    $('#certificate_UNHCR_PSEA').magnificPopup({
+        type: 'iframe'
+    });
+
+    $("#certificate_Safeguarding_Essentials").on('click', function () {
+        $("#certificate_Safeguarding_Essentials").attr("href", "/files/certificate/online/Safeguarding_Essentials_Sastelvio_Manuel.pdf")
+    });
+
+    $('#certificate_Safeguarding_Essentials').magnificPopup({
+        type: 'iframe'
+    });
+    
+    $("#certificate_BSAFE_2021_UNDSS").on('click', function () {
+        $("#certificate_BSAFE_2021_UNDSS").attr("href", "/files/certificate/online/BSAFE_2021_UNDSS_Sastelvio Manuel.pdf")
+    });
+
+    $('#certificate_BSAFE_2021_UNDSS').magnificPopup({
+        type: 'iframe'
+    });
 
 });
 
