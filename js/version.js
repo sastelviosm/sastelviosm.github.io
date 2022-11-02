@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $("#data_version").text('2021.04.20');
-    $("#app_version").text('2.7');
+    $("#data_version").text('2022.11.03');
+    $("#app_version").text('2.8');
 
     // CALL MODAL TO SHOW VERSION DATA   
 });
