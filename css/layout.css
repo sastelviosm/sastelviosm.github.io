@@ -1093,12 +1093,27 @@
     list-style: none;
 }
 
+.skills-list ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .skills-list ul li {
     position: relative;
     padding: 20px 0;
 }
 
+.skills-list ol li {
+    position: relative;
+    padding: 20px 0;
+}
+
 .skills-list ul li:after {
+    left: -20px;
+}
+
+.skills-list ol li:after {
     left: -20px;
 }
 
@@ -1109,12 +1124,13 @@
     color: #626262;
 }
 
-.skills-list ul li .subname {
-    margin: 0 0 16px 0;
-    font-size: 12px;
-    line-height: 12px;
+.skills-list ol li .name {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    line-height: 14px;
     color: #626262;
 }
+
 
 .skills-list ul li .progress {
     position: relative;
