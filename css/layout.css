@@ -1711,7 +1711,7 @@
 }
 
 .skills-list.list ol li .name:before {
-    content: "\f0da";
+    content: "\f120";
     position: absolute;
     left: 0;
     top: 0;
