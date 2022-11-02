@@ -1266,6 +1266,11 @@ input[type="file"] {
     line-height: 18px;
 }
 
+.skills-list.list ol li .name {
+    font-size: 12px;
+    line-height: 14px;
+}
+
 /*
         Works
 */
