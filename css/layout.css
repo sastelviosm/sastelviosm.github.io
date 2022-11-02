@@ -1106,7 +1106,7 @@
 
 .skills-list ol li {
     position: relative;
-    padding: 20px 0;
+    padding: 4px 0;
 }
 
 .skills-list ul li:after {
@@ -1686,7 +1686,7 @@
 }
 
 .skills-list.list ol li .name {
-    padding-left: 30px;
+    padding-left: 70px;
     margin-bottom: 0;
     position: relative;
 }
@@ -1713,7 +1713,7 @@
 .skills-list.list ol li .name:before {
     content: "\f120";
     position: absolute;
-    left: 0;
+    left: 7%;
     top: 0;
     display: inline-block;
     font-family: "Ionicons";
