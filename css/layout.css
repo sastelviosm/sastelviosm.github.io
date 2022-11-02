@@ -1671,13 +1671,46 @@
     text-align: center;
 }
 
+.skills-list.circles ol li .name {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
 .skills-list.list ul li .name {
     padding-left: 30px;
     margin-bottom: 0;
     position: relative;
 }
 
+.skills-list.list ol li .name {
+    padding-left: 30px;
+    margin-bottom: 0;
+    position: relative;
+}
+
 .skills-list.list ul li .name:before {
+    content: "\f121";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    font-family: "Ionicons";
+    color: #78cc6d;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.skills-list.list ol li .name:before {
     content: "\f121";
     position: absolute;
     left: 0;
