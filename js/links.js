@@ -6,7 +6,7 @@ $('#ir_blog').click(function () {
 //CV
 $("#cv_pt").on('click', function (e) {
     e.preventDefault();
-    url = '/files/cv//CV_SASTELVIO_SERAFIM_MANUEL_Versao16.11.2022_Europass_PT.pdf';
+    url = '/files/cv//CV_SASTELVIO_SERAFIM_MANUEL_Versao16.11.2022_Europass_EN.pdf';
     window.open(url, "_blank");
     trackOutboundLink(url);
 });
