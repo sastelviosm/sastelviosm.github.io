@@ -244,7 +244,7 @@ $('#social_twitter').click(function () {
 });
 
 $('#social_github').click(function () {
-    window.open('https://github.com/sastelvio', '_blank');
+    window.open('https://github.com/sastelvios', '_blank');
 });
 
 $('#social_instagram').click(function () {
